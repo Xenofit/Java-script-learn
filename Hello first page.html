@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+<script type="text/javascript">
+  function digitalWatch() {
+    var date = new Date();
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var seconds = date.getSeconds();
+    if (hours < 10) hours = "0" + hours;
+    if (minutes < 10) minutes = "0" + minutes;
+    if (seconds < 10) seconds = "0" + seconds;
+    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
+    setTimeout("digitalWatch()", 1000);
+  }
+</script>
+
+	<title>Java script test</title>
+
+</head>
+
+<body onload="digitalWatch()">
+	<p id="digital_watch" style="color: purple; font-size: 180%; font-weight: bold;"></p>
+
+<h1>Ваше имя : <span id="name"></span></h1>
+
+<script>
+var user = prompt('Введите имя', '');
+
+if (user == null) {
+  var user = 'Неизвестный';
+  alert ('Вы не ввели имя');
+} else if (user == '') {
+  var user = 'Неизвестный';
+  alert ('Вы не ввели имя');
+} else {
+  alert ('Ваше имя '+ user);  
+}
+
+document.getElementById('name').innerHTML = user;
+</script>
+
+<h2>Начало док-та</h2>
+<p>123</p>
+
+<script defer src="file:///C:/Users/Denis/Desktop/JS/scripts/alert1.js">
+</script>
+
+<script >
+	alert ('Данная страница показывает время');
+</script>
+
+<h2>Конец</h2>
+
+
+<a onclick="return check();" style="color: #FFFAF0; background-color: #00BFFF; border-radius: 5px "> Нажмите чтобы ввести пароль </a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/alert2.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check2();" style="color: blue; background-color: #A9A9A9; border-radius: 5px "> Нажмите чтобы ввести возраст </a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/alert2.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check3();" style="color: green">Нажмите чтобы войти в учётную запись</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/alert2.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check4();" style="color: violet">Нажмите для определения диапазона</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/alert2.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check5();" style="color: blue">Нажмите для подсчета суммы всех введённых чисел</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/alert2.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check6();" style="color: red">Циклы, лучше не нажимать долгий процесс циклов</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/cycles.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check7();" style="color: cyan">Начало работы с функциями</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/functions.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check8();" style="color: blue">Калькулятор возведения числа в степень 
+</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/functions.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check9();" style="color: #00ff66ff">Анонимная функция </a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/functions.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check10();" style="color: blue">Вывести случайное число от 0 до 10</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<button onclick="alert('Был зафиксирован щелчок на кнопке');">Щелкни здесь</button>
+
+<br>
+<br>
+
+<a onclick="return check11();" style="color: blue">Вывести первую букву заглавной в слове привет</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check12();" style="color: blue">Проверка спама на true или false</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check13();" style="color: blue">Усечение строки</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check14();" style="color: orange"><u>Стоимость покупки =   
+<b><span id="buy"></span></b> </u> </a>
+<script>
+	function check14() {
+	var p1=+prompt("Введите стоимость","");
+if (p1>0) {
+document.getElementById('buy').innerHTML = p1+"$";
+} else {
+document.getElementById('buy').innerHTML = "Некорректный ввод";
+}
+}
+</script>
+
+<br>
+<br>
+
+<a onclick="return check15();" style="color: blue">Объекты начало</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check16();" style="color: blue">Проверка есть ли в объекте свойства или нет?</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check17();" style="color: blue">Подсчет всех значений в свойствах объекта</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check18();" style="color: blue">Вывод имени большего свойства по значению в объекте</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check19();" style="color: blue">Массивы.Нахождение и вывод последнего элемента в массиве</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check20();" style="color: blue">Массивы.Добавляем новый элемент в конец массива</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check21();" style="color: blue">Массивы.Генерация случайного значения из массива</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check22();" style="color: blue">Массивы.Калькулятор суммы введённых значений.</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check23();" style="color: blue">Массивы.Поиск в массиве.</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check24();" style="color: blue">Массивы.Фильтр диапазона.</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check25();" style="color: blue">Массивы.Добавление класса в строку.</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check26();" style="color: blue">Массивы.Преобразование из background-color в backgroundColor.</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check27();" style="color: blue">Массивы.Удаление класса если он есть</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check28();" style="color: blue">Массивы.Создаём функцию filterRangeInPlace(arr, a, b), которая получает массив с числами arr и удаляет из него все числа вне диапазона a..b</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check29();" style="color: blue">Массивы.Отсортировать числа(5, 2, 1, -10, 8) в обратном порядке</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check30();" style="color: blue">Массивы.Копирование и сортировка строк массива.</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check31();" style="color: blue">Массивы.Случайный порядок чисел (1, 2, 3, 4, 5) в массиве</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check32();" style="color: blue">Массивы.Сортировка массива объектов people по полю age</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check33();" style="color: blue">Массивы.Вывод односвязного списка рекурсией</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check34();" style="color: blue">Массивы.Сортировка анограмм</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+<br>
+<br>
+
+<a onclick="return check35();" style="color: blue">Массивы.Оставить только уникальные элементы массива</a>
+<script src="file:///C:/Users/Denis/Desktop/JS/scripts/methods and objects.js">
+</script>
+
+
+
+
+
+</body>
+</html>
