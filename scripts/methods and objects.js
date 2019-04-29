@@ -420,3 +420,40 @@ var strings = ["кришна", "кришна", "харе", "харе",
 
 alert( unique(strings) ); // кришна, харе, 8-()
 }
+
+function check36() {
+/*
+var arr = ["Есть", "жизнь", "на", "Марсе"];
+
+var arrLength = [];
+for (var i = 0; i < arr.length; i++) {
+  arrLength[i] = arr[i].length;
+}
+
+alert( arrLength ); // 4,5,2,5
+*/
+//Вместо масива можно использовать метод reduce
+function getSums(arr) {
+  var result = [];
+  if (!arr.length) return result;
+
+  var totalSum = arr.reduce(function(sum, item) {
+    result.push(sum);
+    return sum + item;
+  });
+  result.push(totalSum);
+
+  return result;
+}
+
+alert(getSums([1,2,3,4,5])); // 1,3,6,10,15
+alert(getSums([-2,-1,0,1])); // -2,-3,-3,-2
+
+var arr = ["Есть", "жизнь", "на", "Марсе"];
+
+var result=arr.map(function(name){
+  return name.length;
+});
+
+alert( result ); // 4,5,2,5
+}
